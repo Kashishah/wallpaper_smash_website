@@ -12,7 +12,7 @@ include_once 'header.php';
                 <div class="col-md-12 login-form">
                     <div class="card-body">
                         <h5 class="card-title text-center mb-4">Register</h5>
-                        <form>
+                        <form class="mb-3">
                             <div class="mb-3">
                                 <label for="firstname" class="form-label">FirstName</label>
                                 <input type="text" class="form-control" id="firstname" name="firstname" required>
@@ -40,6 +40,8 @@ include_once 'header.php';
                                 Unable to login ? <a class="register-link" href=""> Register</a>
                             </div> -->
                         </form>
+
+                        <a class="login-link-btn " href="login.php">Go to login page</a>
                     </div>
                 </div>
 

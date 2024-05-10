@@ -28,9 +28,11 @@ include_once 'header.php';
                                     <span><a href="">Forgot Password?</a> </span>
                                 </div>
                                 <hr>
-                                <div class="register-txt">
+                                <!-- <div class="register-txt">
                                     Unable to login ? <a class="register-link" href="register.php"> Register</a>
-                                </div>
+                                </div> -->
+                                <a class="register-link-btn" href="register.php"> Unable to login ? Register
+                                    Now</a>
                             </form>
                         </div>
                     </div>

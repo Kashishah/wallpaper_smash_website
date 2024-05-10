@@ -73,16 +73,51 @@ hr {
     color: #295D5E;
 }
 
-.register-txt {
-    margin-left: 18%;
-    text-transform: none;
+
+/* This is the button css which send to the register page  */
+.register-link-btn {
+    background: #FFF;
+    color: #295D5E;
+    font: bold 11px "Helvetica";
+    padding: 12px;
     text-decoration: none;
+
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.register-link {
-    text-transform: none;
-    text-decoration: none;
-    color: #295D5E;
-    border-bottom: 1px solid #295D5E;
+.register-link-btn:after {
+    background: #295D5E;
+    color: #FFF;
+    content: ">";
+    display: inline-block;
+    font: bold 11px "Georgia";
+    height: 25px;
+    line-height: 25px;
+    margin-left: 10px;
+    text-align: center;
+    width: 25px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
 
+.register-link-btn:hover {
+    -webkit-box-shadow: 0px 17px 25px -7px rgba(37, 106, 107, 1);
+    -moz-box-shadow: 0px 17px 25px -7px rgba(37, 106, 107, 1);
+    box-shadow: 0px 17px 25px -7px rgba(37, 106, 107, 1);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
