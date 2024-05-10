@@ -1,9 +1,3 @@
-<?php
-
-include_once 'header.php';
-
-?>
-
 <div class="bg-login container-fluid position-relative" style="height: 100vh;">
     <div class="row justify-content-center align-items-center h-100">
         <div class="col-md-8 center-container">

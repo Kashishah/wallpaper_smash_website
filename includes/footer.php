@@ -1,7 +1,5 @@
-<?php include_once 'header.php'; ?>
-
 <footer>
-    <div class="container footer-content">
+    <div class="container  footer-content">
         <div class="row">
             <div class="col-md-6">
                 <h4 class="">About Us</h4>

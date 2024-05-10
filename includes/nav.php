@@ -1,5 +1,3 @@
-<?php include_once 'header.php'; ?>
-
 <nav class="navbar">
     <div class="container">
         <a href="#" class="navbar-brand">
