@@ -27,7 +27,7 @@ body {
     /* font-family: "Sedan SC", serif;
      */
     font-family: "PT Serif", serif;
-    font-weight: 4  00;
+    font-weight: 4 00;
     font-style: normal;
 }
 
@@ -137,6 +137,128 @@ body {
     }
 }
 
+/* Login Form Style  */
+.bg-login {
+    background: #cbebeb;
+}
+
+.login-card {
+    padding: 1%;
+    width: 80%;
+    height: fit-content;
+    -webkit-box-shadow: 12px -8px 25px -7px rgba(37, 106, 107, 1);
+    -moz-box-shadow: 12px -8px 25px -7px rgba(37, 106, 107, 1);
+    box-shadow: 12px -8px 25px -7px rgba(37, 106, 107, 1);
+
+    border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+}
+
+@media (max-width: 992px) {
+    .login-card {
+        width: 90%;
+    }
+}
+
+.login-form {
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.login-image {
+    background-image: url('../images/login/login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.center-container {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.login-btn-bg {
+    background-color: #5C9090;
+    color: white;
+}
+
+.login-btn-bg:hover {
+    background-color: #295D5E;
+    color: whitesmoke;
+}
+
+.login-btn-txt {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.forgot-pass span a {
+    color: rgb(162, 162, 162);
+    text-transform: none;
+    text-decoration: none;
+}
+
+.forgot-pass span a:hover {
+    color: rgb(100, 99, 99);
+
+}
+
+hr {
+    margin-left: 8%;
+    width: 80%;
+    color: #295D5E;
+}
+
+.register-txt {
+    margin-left: 18%;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.register-link {
+    text-transform: none;
+    text-decoration: none;
+    color: #295D5E;
+    border-bottom: 1px solid #295D5E;
+
+}
+
+
+
+/* Register Form Card */
+.bg-register {
+    background: #cbebeb;
+}
+
+.center-register-container {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.register-card {
+    padding: 1%;
+    width: 60%;
+    height: fit-content;
+
+    -webkit-box-shadow: -20px -8px 25px -7px rgba(37, 106, 107, 1);
+    -moz-box-shadow: -20px -8px 25px -7px rgba(37, 106, 107, 1);
+    box-shadow: -20px -8px 25px -7px rgba(37, 106, 107, 1);
+
+    border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+}
+
+@media (max-width: 992px) {
+    .register-card {
+        width: 90%;
+    }
+}
 
 
 /* Footer Styles */
