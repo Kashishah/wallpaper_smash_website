@@ -11,6 +11,10 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/register.css">
+    <link rel="stylesheet" href="style/footer.css">
 
 
     <!-- Google Fonts -->

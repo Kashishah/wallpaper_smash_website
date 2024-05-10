@@ -1,0 +1,31 @@
+/* Register Form Card */
+.bg-register {
+    background: #cbebeb;
+}
+
+.center-register-container {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.register-card {
+    padding: 1%;
+    width: 60%;
+    height: fit-content;
+
+    -webkit-box-shadow: -20px -8px 25px -7px rgba(37, 106, 107, 1);
+    -moz-box-shadow: -20px -8px 25px -7px rgba(37, 106, 107, 1);
+    box-shadow: -20px -8px 25px -7px rgba(37, 106, 107, 1);
+
+    border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+}
+
+@media (max-width: 992px) {
+    .register-card {
+        width: 90%;
+    }
+}
