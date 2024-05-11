@@ -64,11 +64,8 @@ include_once 'includes/header.php';
     $(document).ready(function () {
         $('#success-message').hide();
         $('#error-message').hide();
-
         $('#register-submit-btn').on('click', function (e) {
-
             e.preventDefault();
-
             let firstname = $('#firstname').val();
             let lastname = $('#lastname').val();
             let email = $('#email').val();
@@ -76,6 +73,7 @@ include_once 'includes/header.php';
             let confirm_password = $('#confirm-password').val();
 
             if (!firstname || !lastname || !email || !password) {
+                // console.log('in else');
                 $('#success-message').slideUp();
                 $('#error-message').html('Some Fields are empty please fill first!');
                 $('#error-message').addClass('alert alert-danger');
@@ -83,7 +81,10 @@ include_once 'includes/header.php';
                 return;
             }
 
+            // console.log('pass', password);
+            // console.log('cpass', confirm_password);
             if (password == confirm_password) {
+                console.log('in if ');
                 let formData = {
                     'user_firstname': firstname,
                     'user_lastname': lastname,
@@ -96,19 +97,22 @@ include_once 'includes/header.php';
                     url: 'backend/register.php',
                     data: formData,
                     success: function (response) {
-
+                        console.log(response);
                         if (response == 1) {
                             $('#error-message').slideUp();
                             $('#success-message').addClass('alert alert-success');
                             $('#success-message').slideDown();
-                        } else {
+                        }
+                        else {
                             $('#success-message').slideUp();
                             $('#error-message').addClass('alert alert-danger');
                             $('#success-message').slideDown();
                         }
                     }
                 });
-            } else {
+            }
+            else {
+                // console.log('in else');
                 $('#success-message').slideUp();
                 $('#error-message').html('Password should be same');
                 $('#error-message').addClass('alert alert-danger');
