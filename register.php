@@ -117,5 +117,5 @@ include_once 'includes/header.php';
         });
     });
 </script>
-
+<!-- comment added -->
 </body>
