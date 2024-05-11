@@ -40,7 +40,7 @@ include_once 'includes/header.php';
                                 <input type="password" class="form-control" id="confirm-password" name="password"
                                     required>
                             </div>
-                            <button id="register-submit-btn" type="button"
+                            <button id="register-submit-btn" type="submit"
                                 class="login-btn-bg login-btn-txt btn text-center w-100">REGISTER
                             </button>
                         </form>
@@ -65,38 +65,59 @@ include_once 'includes/header.php';
         $('#success-message').hide();
         $('#error-message').hide();
         $('#register-submit-btn').on('click', function (e) {
-            // e.preventDefault()
+            e.preventDefault();
             let firstname = $('#firstname').val();
             let lastname = $('#lastname').val();
             let email = $('#email').val();
             let password = $('#password').val();
-            let formData = {
-                'user_firstname': firstname,
-                'user_lastname': lastname,
-                'user_email': email,
-                'user_password': password
+            let confirm_password = $('#confirm-password').val();
+
+            if (!firstname || !lastname || !email || !password) {
+                // console.log('in else');
+                $('#success-message').slideUp();
+                $('#error-message').html('Some Fields are empty please fill first!');
+                $('#error-message').addClass('alert alert-danger');
+                $('#error-message').slideDown();
+                return;
             }
 
-            $.ajax({
-                method: 'POST',
-                dataType: 'json',
-                url: 'backend/register.php',
-                data: formData,
-                success: function (response) {
-                    console.log(response);
-                    if (response == 1) {
-                        $('#error-message').slideUp();
-                        $('#success-message').addClass('alert alert-success');
-                        $('#success-message').slideDown();
-                    }
-                    else {
-                        $('#success-message').slideUp();
-                        $('#error-message').addClass('alert alert-danger');
-                        $('#success-message').slideDown();
-                    }
+            // console.log('pass', password);
+            // console.log('cpass', confirm_password);
+            if (password == confirm_password) {
+                console.log('in if ');
+                let formData = {
+                    'user_firstname': firstname,
+                    'user_lastname': lastname,
+                    'user_email': email,
+                    'user_password': password
                 }
-            });
-
+                $.ajax({
+                    method: 'POST',
+                    dataType: 'json',
+                    url: 'backend/register.php',
+                    data: formData,
+                    success: function (response) {
+                        console.log(response);
+                        if (response == 1) {
+                            $('#error-message').slideUp();
+                            $('#success-message').addClass('alert alert-success');
+                            $('#success-message').slideDown();
+                        }
+                        else {
+                            $('#success-message').slideUp();
+                            $('#error-message').addClass('alert alert-danger');
+                            $('#success-message').slideDown();
+                        }
+                    }
+                });
+            }
+            else {
+                // console.log('in else');
+                $('#success-message').slideUp();
+                $('#error-message').html('Password should be same');
+                $('#error-message').addClass('alert alert-danger');
+                $('#error-message').slideDown();
+            }
         });
     });
 </script>
