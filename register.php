@@ -81,6 +81,7 @@ include_once 'includes/header.php';
                 return;
             }
 
+            // adedefasfoanfoasinnasnfas
             // console.log('pass', password);
             // console.log('cpass', confirm_password);
             if (password == confirm_password) {
