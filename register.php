@@ -5,16 +5,10 @@ include_once 'includes/header.php';
 ?>
 
 
-
 <div class="bg-register container-fluid position-relative" style="height: 100vh;">
-
-    <div class="success-message">
-
-    </div>
     <div class="row justify-content-center align-items-center h-100">
         <div class="col-md-8 center-register-container">
             <div class="card register-card">
-
                 <div class="col-md-12 login-form">
                     <div class="card-body">
                         <h5 class="card-title text-center mb-4">Register</h5>
@@ -80,11 +74,6 @@ include_once 'includes/header.php';
                 $('#error-message').slideDown();
                 return;
             }
-            // asfaslfnal
-
-            // adedefasfoanfoasinnasnfas
-            // console.log('pass', password);
-            // console.log('cpass', confirm_password);
             if (password == confirm_password) {
                 console.log('in if ');
                 let formData = {
@@ -114,7 +103,6 @@ include_once 'includes/header.php';
                 });
             }
             else {
-                // console.log('in else');
                 $('#success-message').slideUp();
                 $('#error-message').html('Password should be same');
                 $('#error-message').addClass('alert alert-danger');
@@ -123,5 +111,4 @@ include_once 'includes/header.php';
         });
     });
 </script>
-<!-- comment added -->
 </body>
