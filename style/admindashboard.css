@@ -1,0 +1,30 @@
+.avatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.category-btn-bg {
+    background-color: #5C9090;
+    color: white;
+}
+
+.category-btn-bg:hover {
+    background-color: #295D5E;
+    color: whitesmoke;
+}
+
+.category-btn-txt {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+#liveToast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050;
+    /* Adjust z-index if needed */
+}

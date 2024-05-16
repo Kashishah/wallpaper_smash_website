@@ -13,12 +13,13 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/nav.css">
-    <link rel="stylesheet" href="style/login.css">
-    <link rel="stylesheet" href="style/register.css">
-    <link rel="stylesheet" href="style/forgot-pass.css">
-    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/login.css">
+    <link rel="stylesheet" href="../style/register.css">
+    <link rel="stylesheet" href="../style/forgot-pass.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/admindashboard.css">
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
@@ -32,4 +33,4 @@
 
 </head>
 
-<body>
+<body></body>

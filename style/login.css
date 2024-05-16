@@ -64,8 +64,19 @@
 
 .forgot-pass span a:hover {
     color: rgb(100, 99, 99);
-
 }
+
+.remember-me {
+    color: rgb(162, 162, 162);
+    text-transform: none;
+    text-decoration: none;
+}
+
+
+.remember-me:hover {
+    color: rgb(100, 99, 99);
+}
+
 
 hr {
     margin-left: 8%;
